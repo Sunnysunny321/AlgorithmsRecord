@@ -14,10 +14,11 @@ public class SortingMain {
         int[] array = getRandomArray(NUMBER, BOUND);
         long timeStart = System.currentTimeMillis();
 
+        //BubbleSorting.sort(array);
         //SelectionSorting.sort(array);
         //InsertionSorting.sort(array);
-        //BubbleSorting.sort(array);
         MergeSorting.sort(array);
+        //ShellSorting.sort(array);
 
 
         long timeEnd = System.currentTimeMillis();

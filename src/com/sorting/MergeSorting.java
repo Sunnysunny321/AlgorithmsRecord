@@ -2,7 +2,9 @@ package com.sorting;
 
 
 public class MergeSorting {
+
     private static int[] arrayMerge;
+
     static void sort(int[] array) {
         int len = array.length;
         arrayMerge = new int[len];
@@ -21,6 +23,7 @@ public class MergeSorting {
     }
 
     private static void merge(int[] array, int left, int mid, int right) {
+        //avoid to declare and create auxiliary array here
         System.arraycopy(array, left, arrayMerge, left, right - left + 1);
 
         int i = left;
