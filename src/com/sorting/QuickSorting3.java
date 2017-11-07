@@ -7,6 +7,11 @@ public class QuickSorting3 {
     }
 
     private static void sorting(int[] array, int left, int right) {
+        /*
+         * when a[i] < obj, swap a[lt] and a[i], then lt++, i++
+         * when a[i] > obj, swap a[gt] and a[i], then gt--
+         * when a[i] = obj, i++
+         */
 
         if (right <= left)
             return;
