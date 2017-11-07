@@ -1,7 +1,7 @@
 package com.sorting;
 
 
-public class MergeSorting {
+public class MergeSortingTopDown {
 
     private static int[] arrayMerge;
 
@@ -17,7 +17,7 @@ public class MergeSorting {
             return;
         int mid = left + (right - left) / 2;
         sorting(array, left, mid);
-        sorting(array, mid+1, right);
+        sorting(array, mid + 1, right);
         merge(array, left, mid, right);
 
     }
@@ -27,7 +27,7 @@ public class MergeSorting {
         System.arraycopy(array, left, arrayMerge, left, right - left + 1);
 
         int i = left;
-        int j = mid+1;
+        int j = mid + 1;
 
         for (int k = left; k <= right; k++) {
             if (i > mid)

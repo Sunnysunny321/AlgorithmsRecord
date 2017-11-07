@@ -17,7 +17,7 @@ public class SortingMain {
         //BubbleSorting.sort(array);
         //SelectionSorting.sort(array);
         //InsertionSorting.sort(array);
-        MergeSorting.sort(array);
+        MergeSortingTopDown.sort(array);
         //ShellSorting.sort(array);
 
 
