@@ -2,7 +2,7 @@ package com.sorting;
 
 
 public class MergeSortingTopDown {
-
+    //Merge sort: from top to down, using recursion
     private static int[] arrayMerge;
 
     static void sort(int[] array) {
@@ -10,7 +10,6 @@ public class MergeSortingTopDown {
         arrayMerge = new int[len];
         sorting(array, 0, len - 1);
     }
-
 
     private static void sorting(int[] array, int left, int right) {
         if (left >= right)
