@@ -3,12 +3,14 @@ package com.sorting;
 
 
 
+import java.util.Arrays;
+
 import static com.sorting.SortingUtil.*;
 
 public class SortingMain {
 
-    private final static int NUMBER = 10000000;
-    private final static int BOUND = 1 << 20; //2^30
+    private final static int NUMBER = 1000;
+    private final static int BOUND = 1 << 2; //2^30
 
     public static void main(String[] args) {
 
@@ -21,7 +23,9 @@ public class SortingMain {
         //ShellSorting.sort(array);
         //MergeSortingTopDown.sort(array);
         //MergeSortingDownTop.sort(array);
-        QuickSorting2.sort(array);
+        //Arrays.sort(array);
+        //QuickSorting2.sort(array);
+        QuickSorting3.sort(array);
 
 
 
