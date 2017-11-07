@@ -1,7 +1,7 @@
 package com.sorting;
 
 public class QuickSorting3 {
-    //apply to array which has many repeat
+    //apply to array which has many repeat elements
     static void sort(int[] array) {
         sorting(array, 0, array.length - 1);
     }
