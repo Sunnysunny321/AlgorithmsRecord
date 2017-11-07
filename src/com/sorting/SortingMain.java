@@ -2,11 +2,12 @@ package com.sorting;
 
 
 
+
 import static com.sorting.SortingUtil.*;
 
 public class SortingMain {
 
-    private final static int NUMBER = 100000000;
+    private final static int NUMBER = 10000000;
     private final static int BOUND = 1 << 20; //2^30
 
     public static void main(String[] args) {
@@ -17,9 +18,11 @@ public class SortingMain {
         //BubbleSorting.sort(array);
         //SelectionSorting.sort(array);
         //InsertionSorting.sort(array);
-        //MergeSortingTopDown.sort(array);
         //ShellSorting.sort(array);
+        //MergeSortingTopDown.sort(array);
         //MergeSortingDownTop.sort(array);
+        QuickSorting2.sort(array);
+
 
 
         long timeEnd = System.currentTimeMillis();
