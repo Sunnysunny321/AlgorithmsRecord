@@ -15,7 +15,10 @@ public class SortingMain {
         long timeStart = System.currentTimeMillis();
 
         //SelectionSorting.sort(array);
-        InsertionSorting.sort(array);
+        //InsertionSorting.sort(array);
+        //BubbleSorting.sort(array);
+        MergeSorting.sort(array);
+
 
         long timeEnd = System.currentTimeMillis();
 
