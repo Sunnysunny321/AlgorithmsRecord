@@ -18,9 +18,11 @@ public class QuickSorting2 {
         int j = right + 1;
         int obj = array[left];
         while (true) {
+            //can't be written as array[++i] <= obj and array[--j] >= obj,
+            // it will cause stackOverFlow when size is large
+            //when NUMBER = 10^5 and BOUND = 1 << 1
             while (array[++i] < obj) if (i == right) break;
             while (array[--j] > obj) if (j == left) break;
-
             if (i < j)
                 SortingUtil.swap(array, i, j);
             else {

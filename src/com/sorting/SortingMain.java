@@ -9,8 +9,8 @@ import static com.sorting.SortingUtil.*;
 
 public class SortingMain {
 
-    private final static int NUMBER = 1000;
-    private final static int BOUND = 1 << 2; //2^30
+    private final static int NUMBER = 100000;
+    private final static int BOUND = 1 << 1; //2^30
 
     public static void main(String[] args) {
 
