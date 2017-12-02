@@ -1,10 +1,5 @@
 package com.sorting;
 
-
-
-
-import java.util.Arrays;
-
 import static com.sorting.SortingUtil.*;
 
 public class SortingMain {
